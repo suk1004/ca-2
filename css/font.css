@@ -1,0 +1,45 @@
+/* <sandbox> */
+@font-face{
+    font-family: SB_B;
+    src:url('../font/sb_b.woff') format('woff'); 
+    }
+@font-face{
+    font-family: SB_M;
+    src:url('../font/sb_m.woff') format('woff'); 
+    }
+@font-face{
+    font-family: SB_L;
+    src:url('../font/sb_l.woff') format('woff');  
+    }
+
+/* <나눔스퀘어> */
+@font-face{
+    font-family: Nanum Square EB;
+    src:url('../font/NanumSquareEB.woff') format('woff');  
+    }
+@font-face{
+    font-family: Nanum Square B;
+    src:url('../font/NanumSquareB.woff') format('woff');  
+    }
+@font-face{
+    font-family: Nanum Square M;  
+    src:url('../font/NanumSquareR.woff') format('woff');  
+    }
+@font-face{
+    font-family: Nanum Square L;  
+    src:url('../font/NanumSquareL.woff') format('woff');  
+    }
+
+/* <Gmarket 산스 OTF> */
+@font-face{
+    font-family: GmS_B;
+    src:url('../font/GmarketSansBold.woff') format('woff');  
+    }
+@font-face{
+    font-family: GmS_M;  
+    src:url('../font/GmarketSansMedium.woff') format('woff');  
+    }
+@font-face{
+    font-family: GmS_L;  
+    src:url('../font/GmarketSansLight.woff') format('woff');  
+    }

@@ -1,0 +1,1451 @@
+<!doctype html>
+<html lang="ko-KR" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>IKEA KOREA | 이케아 코리아 - IKEA</title>
+<link rel="stylesheet" type="text/css" href="./css/ikea.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+
+<!-- <p id="txt1">0</p> --> <!--스크롤위치파악하기-->
+
+<div id="top_btn"> <!-- 우측하단 고정 탑 이동 버튼 -->
+    <button type="button" name="top_btn">
+            <span class="material-icons">north</span>
+    </button>
+</div>
+
+<aside id="side_dot_scroll">
+    <ul>
+        <li>
+            <p class="sd_design sd_d1 sd_active"></p>
+        </li>
+        <li>
+            <p class="sd_design sd_d2"></p>
+        </li>
+        <li>
+            <p class="sd_design sd_d3"></p>
+        </li>
+        <li>
+            <p class="sd_design sd_d4"></p>
+        </li>
+        <li>
+            <p class="sd_design sd_d5"></p>
+        </li>
+        <li>
+            <p class="sd_design sd_d6"></p>
+        </li>
+    </ul>
+</aside>
+
+<div id="gnb_allmenu"> <!-- GNB 전체메뉴 -->
+    <div class="ga_bg"> <!-- 왼쪽 고정 -->
+        <div class="ga_bg2">
+            <div class="ga_button"> <!-- X버튼 -->
+                <span class="material-icons">close</span>                    
+            </div>
+            <h1 class="gnbLogo"> <!--  GNB 로고 -->
+                <a href="https://www.ikea.com/kr/ko/">
+                    <img src="image/IKEA로고.jfif" alt="main_logo">
+                </a>
+            </h1>
+            <div class="gnbNav">    <!-- GNB 메뉴 -->
+                <ul class="gN_h2">
+                    <li>
+                        <h2>
+                            <a href="#">모든 제품</a>
+                            <span class="gN_line"></span>
+                        </h2>
+                    </li>
+                    <li>
+                        <h2><a href="#">디지털 쇼룸</a><span class="gN_line"></span></h2>
+                    </li>
+                </ul>
+                <ul class="gN_h3">
+                    <li>
+                        <h3>
+                            <a href="#">할인중</a>
+                            <span class="gN_line"></span>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3><a href="#">신제품</a><span class="gN_line"></span></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#">더 낮은 새로운 가격</a><span class="gN_line"></span></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#">아이디어</a><span class="gN_line"></span></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#">IKEA Live</a><span class="gN_line"></span></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#">새로운 소식</a><span class="gN_line"></span></h3>
+                    </li>
+                </ul>
+                <ul class="gN_h4">
+                    <li><h4><a href="#">매장안내</a></h4></li>
+                    <li><h4><a href="#">IKEA Family</a></h4></li>
+                    <li><h4><a href="#">고객지원</a></h4></li>
+                    <li><h4><a href="#">배송조회</a></h4></li>
+                    <li><h4><a href="#">내 프로필</a></h4></li>
+                </ul>
+            </div>
+            <div class="gnbFooter"> <!-- GNB 푸터 -->
+                <a class="gF_text1" href="#none">
+                    <span>한국어</span>
+                    <span class="material-icons">expand_less</span>
+                </a>
+                
+                <a class="gF_text2" href="https://www.ikea.com/">
+                    <span class="material-icons">language</span>
+                    <span>국가 변경</span>
+                </a>
+                <ul>
+                    <li><a href="#none">한국어</a></li>
+                    <li><a href="#none">English</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 스크롤 내렸을대 내려오는 탑메뉴 fix -->
+<div id="headerTop_fix">
+    <div class="headerTop_bg_fix clear"> <!-- w 1000px, h 35px--> 
+        <div class="gnb"> <!-- GNB 토글버튼 (전체메뉴 hover) -->
+            <button class="gnb_button">
+                <span class="gnb_line indent"><span>버튼토글(만들기)</span></span>
+                <span class="gnb_name">전체메뉴</span>
+            </button>
+        </div>
+        <form class="search"> <!-- 검색어 입력 -->
+            <div class="search_bg">
+                <label for="search_box">
+                    <img src="image/top/search.png" alt="search_img">
+                    <!-- <span class="material-icons">search</span> -->
+                </label>
+                <input type="text" id="search_box" class="search_box" name="search_box" placeholder="검색어 입력" autocomplete="off">
+                <button class="search_btn_submit" type="submit" name="submit" title="이미지로 IKEA 제품 검색하기">
+                    <span><img src="image/top/camera.png" alt="camera_img"></span>
+                </button>
+            </div>
+        </form>
+        <div class="top_menu"> <!-- top 메뉴 -->
+            <ul class="clear">
+                <li>
+                    <a href="#" title="내 프로필"><img src="image/top/top1.png" alt="top1"></a>
+                </li>
+                <li>
+                    <a href="#" title="배송조회"><img src="image/top/top2.png" alt="top2"></a>
+                </li>
+                <li>
+                    <a href="#" title="위시리스트"><img src="image/top/top3.png" alt="top3"></a>
+                </li>
+                <li>
+                    <a href="#" title="장바구니"><img src="image/top/top4.png" alt="top4"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div id="wrap">
+
+<header id="headerTop"> <!-- 전체메뉴(GNB), 검색어 입력, top 메뉴 -->
+    <div class="headerTop_bg clear"> <!-- w 1000px, h 35px--> 
+        <div class="gnb"> <!-- GNB 토글버튼 (전체메뉴 hover) -->
+            <button class="gnb_button">
+                <span class="gnb_line indent"><span>버튼토글(만들기)</span></span>
+                <span class="gnb_name">전체메뉴</span>
+            </button>
+        </div>
+        <form class="search"> <!-- 검색어 입력 -->
+            <div class="search_bg">
+                <label for="search_box">
+                    <img src="image/top/search.png" alt="search_img">
+                    <!-- <span class="material-icons">search</span> -->
+                </label>
+                <input type="text" class="search_box" name="search_box" placeholder="검색어 입력" autocomplete="off">
+                <button class="search_btn_submit" type="submit" name="submit" title="이미지로 IKEA 제품 검색하기">
+                    <span><img src="image/top/camera.png" alt="camera_img"></span>
+                </button>
+            </div>
+        </form>
+        <div class="top_menu"> <!-- top 메뉴 -->
+            <ul class="clear">
+                <li>
+                    <a href="#" title="내 프로필"><img src="image/top/top1.png" alt="top1"></a>
+                </li>
+                <li>
+                    <a href="#" title="배송조회"><img src="image/top/top2.png" alt="top2"></a>
+                </li>
+                <li>
+                    <a href="#" title="위시리스트"><img src="image/top/top3.png" alt="top3"></a>
+                </li>
+                <li>
+                    <a href="#" title="장바구니"><img src="image/top/top4.png" alt="top4"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<header id="headerMain"> <!-- 로고, 메인메뉴( main nav ) -->
+    <div class="headerMain_bg">
+        <h1 class="logo">
+            <a href="https://www.ikea.com/kr/ko/" title="IKEA">
+                <img src="image/IKEA_logo.png" alt="IKEA_LOGO">
+            </a>
+        </h1>
+        <nav class="main_nav">
+            <ul class="clear">
+                <li class="main_nav_effect1">
+                    <a href="" title="모든 제품">모든 제품</a>
+                </li>
+                <li class="main_nav_effect1">
+                    <a href="" title="디지털 쇼룸">디지털 쇼룸</a>
+                </li>
+                <li class="main_nav_effect2">
+                    <a href="" title="할인 중">할인 중</a>
+                    <span class="main_nav_effect_line"></span>
+                </li>
+                <li class="main_nav_effect2">
+                    <a href="" title="신제품">신제품</a>
+                    <span class="main_nav_effect_line"></span>
+                </li>
+                <li class="main_nav_effect2 main_nav_effect3">
+                    <a href="" title="더 낮은 새로운 가격">더 낮은<br>새로운 가격</a>
+                    <span class="main_nav_effect_line"></span>
+                </li>
+                <li class="main_nav_effect2">
+                    <a href="" title="아이디어">아이디어</a>
+                    <span class="main_nav_effect_line"></span>
+                </li>
+                <li class="main_nav_effect2">
+                    <a href="" title="IKEA LIVE">IKEA LIVE</a>
+                    <span class="main_nav_effect_line"></span>
+                </li>
+                <li class="main_nav_effect2">
+                    <a href="" title="새로운 소식">새로운 소식</a>
+                    <span class="main_nav_effect_line"></span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="mainVisual"> <!-- 메인 비주얼 -->
+    <div class="mV_bg">
+        <div class="mV_circle"> <!-- 스크롤시 반응하는 원 만들기 -->
+            <div class="mV_c1"></div>
+            <!-- <div class="mV_c2 indent">제자리원</div> -->
+        </div>
+        <div class="mV_text"> <!-- 메인비주얼 타이틀 -->
+            <h2>IKEA 이야기</h2>
+            <h3>지속가능한 생활</h3>
+            <h4>일상 속 작은 변화 함께 만들어봐요.<br>IKEA는 누구나 지속 가능한 삶을 시작할 수 있도록<br>집에서 실천할 수 있는 제품과 솔루션을<br>고민하고 있어요.<br><br>나와 지구를 아끼는 일에 실천보다<br>중요한 것은 없으니까요.<br><br>응원해요! 당신의 작은 실천</h4>
+        </div>
+        <div class="mV_page"> <!-- 메인비주얼 페이지 번호, 좌우버튼 -->
+            <div class="mV_preText">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                </ul>
+            </div>
+            <span class="mV_line"></span>
+            <span>9</span>
+        </div>
+        <div class="mV_button">
+            <button class="mV_B_pre indent"> prev </button>
+            <button class="mV_B_nex indent"> next </button>
+        </div>
+        <div class="mV_tagText"> <!-- 이미지 옆 태그 TEXT -->
+            <ul class="clear">
+                <li class="tt1">
+                    <a href="https://www.ikea.com/kr/ko/this-is-ikea/sustainable-everyday/ikea-ikea-pub9e5d35e0">
+                        <span>IKEA 가구가 오랫동안<br>더 많은 사람에게 사랑받을 수 있도록,<br>IKEA 가구에 두 번째 기회를 주세요!</span>
+                    </a>
+                </li>
+                <li class="tt2">
+                    <a href="https://www.ikea.com/kr/ko/this-is-ikea/sustainable-everyday/ikea-pub9750dd90">
+                        <span><span class="tt100">자원순환을 추구하는 IKEA</span>우리가 사랑하는 것들이<br>더 오래 지속될 수 있도록</span>
+                    </a>
+                </li>
+                <li class="tt3">
+                    <a href="https://www.ikea.com/kr/ko/this-is-ikea/sustainable-everyday/-pub879b8290">
+                        <span>고기가 들어가지 않은 미트볼</span>
+                    </a>
+                </li>
+                <li class="tt4">
+                    <a href="https://www.ikea.com/kr/ko/this-is-ikea/sustainable-everyday/-pub96f89ed1">
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            맛있고 건강한 채식
+                        </span>
+                    </a>
+                </li>
+                <li class="tt5">
+                    <a href="https://www.ikea.com/kr/ko/this-is-ikea/sustainable-everyday/-pub79da8971">
+                        <span>물을 절약하는 다양한 방법</span>
+                    </a>
+                </li>
+                <li class="tt6">
+                    <a href="https://www.ikea.com/kr/ko/this-is-ikea/sustainable-everyday/led-pub206fe8b1">
+                        <span>LED로 만드는 더 밝은 세상</span>
+                    </a>
+                </li>
+                <li class="tt7">
+                    <a href="https://www.ikea.com/kr/ko/this-is-ikea/sustainable-everyday/-pub205de751">
+                        <span>쓰레기를 줄여주는 똑똑한 솔루션</span>
+                    </a>
+                </li>
+                <li class="tt8">
+                    <a href="https://www.ikea.com/kr/ko/this-is-ikea/sustainable-everyday/-pub7b284681">
+                        <span>돈을 절약하고 지구를 지키는 방법</span>
+                    </a>
+                </li>
+                <li class="tt9">
+                    <a href="https://www.ikea.com/kr/ko/this-is-ikea/sustainable-everyday/egentid-pub561f3b31">
+                        <span><span class="tt100">EGENTID</span> 에겐티드사람, 농가,<br>그리고 지구를 위한 선택</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="mV_bg_img"> <!-- 메인비주얼 이미지 1~9() -->
+            <ul class="clear">
+                <li>
+                    <a href="https://www.ikea.com/kr/ko/this-is-ikea/sustainable-everyday/ikea-ikea-pub9e5d35e0">
+                        <img src="image/main_visual/main_visual_1.png" alt="mv_1">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.ikea.com/kr/ko/this-is-ikea/sustainable-everyday/ikea-pub9750dd90">
+                        <img src="image/main_visual/main_visual_2.png" alt="mv_2">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.ikea.com/kr/ko/this-is-ikea/sustainable-everyday/-pub879b8290">
+                        <img src="image/main_visual/main_visual_3_1.png" alt="mv_3">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.ikea.com/kr/ko/this-is-ikea/sustainable-everyday/-pub96f89ed1">
+                        <img src="image/main_visual/main_visual_4.png" alt="mv_4">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.ikea.com/kr/ko/this-is-ikea/sustainable-everyday/-pub79da8971">
+                        <img src="image/main_visual/main_visual_5.png" alt="mv_5">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.ikea.com/kr/ko/this-is-ikea/sustainable-everyday/led-pub206fe8b1">
+                        <img src="image/main_visual/main_visual_6_1.png" alt="mv_6">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.ikea.com/kr/ko/this-is-ikea/sustainable-everyday/-pub205de751">
+                        <img src="image/main_visual/main_visual_7_1.png" alt="mv_7">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.ikea.com/kr/ko/this-is-ikea/sustainable-everyday/-pub7b284681">
+                        <img src="image/main_visual/main_visual_8_1.png" alt="mv_8">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.ikea.com/kr/ko/this-is-ikea/sustainable-everyday/egentid-pub561f3b31">
+                        <img src="image/main_visual/main_visual_9.png" alt="mv_9">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="content1"> <!-- 컨텐츠 1 : 진행 중인 이벤트 및 프로모션 -->
+    <div class="c1_bg"> <!-- w 1200px -->
+        <div class="c1_circle"> <!-- 컨텐츠 1 : 배경 원 오브젝트 -->
+            <span class="c1_circle_1 indent">컨텐츠 1 : 노란색원 </span>
+        </div>
+        <div class="c1_title"> <!-- 컨텐츠 1 : 제목 -->
+            <div>
+                <img src="image/content1/content1_title.png" alt="진행 중인 이벤트 및 프로모션" title="진행 중인 이벤트 및 프로모션">
+            </div>
+        </div>
+        <div class="c1_content_visual"> <!-- 컨텐츠 슬라이드 -->
+            <ul class="clear">
+                <li class="c1_C_1">
+                    <a href="#none">
+                        <div class="c1_img"><img src="image/content1/c1_img_1.png" alt="content1_img_1"></div>
+                        <dl>                        
+                            <dt>IKEA "새삶스럽게" 캠페인</dt>
+                                <dd>취향에 대한 확신을 갖고, 가족의 범위를 확장해 가며 나의 변화를 선택하고, 서로 달라도 조화를 이루는 새삼스러운 삶을 발견해 보세요.</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li class="c1_C_2">
+                    <a href="#none">
+                        <div class="c1_img"><img src="image/content1/c1_img_2.png" alt="content1_img_2"></div>
+                        <dl>
+                            <dt>IKEA Festival</dt>
+                                <dd>9월 16일 목요일 오후 3시부터 24시간동안 버질 아블로(Virgil Abloh), 니키(Niki), 까데호(CADEJO) 등 유명 아티스트들이 참여하여 다양한 삶의 모습을 공유하며 즐기는 IKEA Festival에 지금 참여하세요!</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li class="c1_C_3">
+                    <a href="#none">
+                        <div class="c1_img"><img src="image/content1/c1_img_3_1.png" alt="content1_img_3"></div>
+                        <dl>
+                            <dt>고기를 좋아하는 이들을 위한 플랜트볼</dt>
+                                <dd>IKEA 미트볼과 같은 뛰어난 맛과 식감을 가지고 있지만, 탄소발자국은 미트볼 대비 4%에 불과합니다.</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li class="c1_C_4">
+                    <a href="#none">
+                        <div class="c1_img"><img src="image/content1/c1_img_4.png" alt="content1_img_4"></div>
+                        <dl>
+                            <dt>설치 서비스</dt>
+                                <dd>IKEA의 주방과 욕실, 전문가의 도움을 받으면 좀 더 편리하게 진행할 수 있어요.</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li class="c1_C_5">
+                    <a href="#none">
+                        <div class="c1_img"><img src="image/content1/c1_img_5.png" alt="content1_img_5"></div>
+                        <dl>
+                            <dt>9월 23일 오후 4시 IKEA Live</dt>
+                                <dd>IKEA Food와 함께하는 연휴 - IKEA Food 제품들과 함께 추석 연휴를 더욱 즐겁게 보낼 수 있는 아이디어를 소개합니다.</dd>
+                        </dl>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 이전, 다음 버튼 -->
+        <div class="c1_C_button"> 
+            <button class="c1_C_pre"><span class="material-icons">chevron_left</span></button>
+            <button class="c1_C_nex"><span class="material-icons">chevron_right</span></button>
+        </div>
+        <!-- 언더 이동 바 -->
+        <!-- <div class="c1_underBar">
+            <div class="c1_ub_bg">
+                <button class="c1_ub_object"></button>
+            </div>
+        </div> -->
+        <div class="c1_notice"> <!-- 배송 지연 안내 -->
+            <dl>
+                <dt>배송 지연 안내</dt>
+                    <dd>
+                        현재 <span>CJ대한통운 택배 노조 파업</span>으로 <span>전라북도 익산 일부 지역</span>에 택배 발송이 제한되고 있습니다.<br>해당 지역의 주문건은 정상화될 때까지 출고가 지연되어 배송 불가한 점 양해 부탁드립니다.
+                    </dd>
+            </dl>
+            <a href="https://www.ikea.com/kr/ko/customer-service/services/delivery/-pubbfee12f0">자세한 지역 보러가기</a>
+        </div>
+    </div>
+</section>
+
+<section id="content2"> <!-- 컨텐츠 2 : 추천 제품 -->
+    <div class="c2_bg"> <!-- w 1200px -->
+        <div class="c2_circle"> <!-- 컨텐츠2 배경 : 원 오브젝트 -->
+            <!-- <span class="c1_circle_2 indent">컨텐츠 2 : 노란색원 </span> -->
+        </div>
+        <div class="c2_title"> <!-- 컨텐츠 2 : 타이틀 -->
+            <div class="c2_T_line"></div>
+            <h1>추천 제품</h1>
+        </div>
+        <div class="c2_content_visual"> <!-- 컨텐츠 2 : 슬라이드 -->
+            <div class="c2_cv_list">
+                <ul class="clear">
+                    <li>
+                        <div class="c2_heart">
+                            <span class="material-icons c2_heart_hover">favorite_border</span>
+                            <span class="material-icons c2_heart_click">favorite</span>
+                        </div>
+                        <a href="#none">
+                            <p>
+                                <img src="image/content2/c2_1_1.png" alt="HELMER 헬메르">
+                                <img class="c2_img_hover" src="image/content2/c2_1_2.png" alt="HELMER 헬메르">
+                            </p>
+                            <dl>
+                                <dt>HELMER 헬메르</dt>
+                                    <dd>이동식서랍유닛28x69 cm</dd>
+                            </dl>
+                            <div class="c2_price">
+                                <sup class="c2_P_1">￦</sup>
+                                <span class="c2_P_2">29,900</span>
+                            </div>
+                            <div class="c2_review">
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star_half</span>
+                                <span class="c2_R_">(1640)</span>
+                            </div>
+                            <div class="c2_3">기타 옵션</div>
+                            <div class="c2_hover">
+                                <span class="material-icons">add_shopping_cart</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="c2_heart">
+                            <span class="material-icons">favorite_border</span>
+                        </div>
+                        <a href="#none">
+                            <p>
+                                <img src="image/content2/c2_2.png" alt="LINNMON 린몬 / ADILS 아딜스">
+                            </p>
+                            <dl>
+                                <dt>LINNMON 린몬 / ADILS 아딜스</dt>
+                                    <dd>테이블, 화이트100x60 cm</dd>
+                            </dl>
+                            <div class="c2_price">
+                                <sup class="c2_P_1">￦</sup>
+                                <span class="c2_P_2">35,000</span>
+                            </div>
+                            <div class="c2_review">
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star_half</span>
+                                <span class="c2_R_">(28)</span>
+                            </div>
+                            <div class="c2_3">기타 옵션</div>
+                            <div class="c2_hover">
+                                <span class="material-icons">add_shopping_cart</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="c2_heart">
+                            <span class="material-icons">favorite_border</span>
+                        </div>
+                        <a href="#none">
+                            <p>
+                                <img src="image/content2/c2_3_1.png" alt="BLÅKULLEN 블로쿨렌">
+                                <img class="c2_img_hover" src="image/content2/c2_3_2.png" alt="BLÅKULLEN 블로쿨렌">
+                            </p>
+                            <dl>
+                                <dt class="c2_text_new">NEW</dt>
+                                <dt>BLÅKULLEN 블로쿨렌</dt>
+                                    <dd>쿠션형 침대프레임+코너침대헤드, 90x200 cm</dd>
+                            </dl>
+                            <div class="c2_price">
+                                <sup class="c2_P_1">￦</sup>
+                                <span class="c2_P_2">149,000</span>
+                            </div>
+                            <div class="c2_hover">
+                                <span class="material-icons">add_shopping_cart</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="c2_heart">
+                            <span class="material-icons">favorite_border</span>
+                        </div>
+                        <a href="#none">
+                            <p>
+                                <img src="image/content2/c2_4_1.png" alt="MELLTORP 멜토르프">
+                                <img class="c2_img_hover" src="image/content2/c2_4_2.png" alt="MELLTORP 멜토르프">
+                            </p>
+                            <dl>
+                                <dt>MELLTORP 멜토르프</dt>
+                                    <dd>테이블, 화이트125x75 cm</dd>
+                            </dl>
+                            <div class="c2_price">
+                                <sup class="c2_P_1">￦</sup>
+                                <span class="c2_P_2">59,900</span>
+                            </div>
+                            <div class="c2_review">
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star_half</span>
+                                <span class="c2_R_">(35)</span>
+                            </div>
+                            <div class="c2_3">기타 옵션</div>
+                            <div class="c2_hover">
+                                <span class="material-icons">add_shopping_cart</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="c2_heart">
+                            <span class="material-icons">favorite_border</span>
+                        </div>
+                        <a href="#none">
+                            <p>
+                                <img src="image/content2/c2_5_1.png" alt="BAGGEBO 바게보">
+                                <img class="c2_img_hover" src="image/content2/c2_5_2.png" alt="BAGGEBO 바게보">
+                            </p>
+                            <dl>
+                                <dt class="c2_text_new">NEW</dt>
+                                <dt>BAGGEBO 바게보</dt>
+                                    <dd>도어수납장, 화이트50x30x80 cm</dd>
+                            </dl>
+                            <div class="c2_price">
+                                <sup class="c2_P_1">￦</sup>
+                                <span class="c2_P_2_1">25,000</span>
+                            </div>
+                            <div class="c2_hover">
+                                <span class="material-icons">add_shopping_cart</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="c2_heart">
+                            <span class="material-icons">favorite_border</span>
+                        </div>
+                        <a href="#none">
+                            <p>
+                                <img src="image/content2/c2_6_1.png" alt="NIKKEBY 니케뷔">
+                                <img class="c2_img_hover" src="image/content2/c2_6_2.png" alt="NIKKEBY 니케뷔">
+                            </p>
+                            <dl>
+                                <dt>NIKKEBY 니케뷔</dt>
+                                    <dd>4칸서랍장, 그레이그린84x70 cm</dd>
+                            </dl>
+                            <div class="c2_price">
+                                <sup class="c2_P_1">￦</sup>
+                                <span class="c2_P_2">89,900</span>
+                            </div>
+                            <div class="c2_review">
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star_half</span>
+                                <span class="c2_R_">(25)</span>
+                            </div>
+                            <div class="c2_3">기타 옵션</div>
+                            <div class="c2_hover">
+                                <span class="material-icons">add_shopping_cart</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="c2_heart">
+                            <span class="material-icons">favorite_border</span>
+                        </div>
+                        <a href="#none">
+                            <p>
+                                <img src="image/content2/c2_7_1.png" alt="SLÄKT 슬렉트">
+                                <img class="c2_img_hover" src="image/content2/c2_7_2.png" alt="SLÄKT 슬렉트">
+                            </p>
+                            <dl>
+                                <dt>SLÄKT 슬렉트</dt>
+                                    <dd>침대프레임+보조침대/수납, 90x200 cm</dd>
+                            </dl>
+                            <div class="c2_price">
+                                <sup class="c2_P_1">￦</sup>
+                                <span class="c2_P_2">269,000</span>
+                            </div>
+                            <div class="c2_review">
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star_half</span>
+                                <span class="c2_R_">(123)</span>
+                            </div>
+                            <div class="c2_3">기타 옵션</div>
+                            <div class="c2_hover">
+                                <span class="material-icons">add_shopping_cart</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="c2_heart">
+                            <span class="material-icons">favorite_border</span>
+                        </div>
+                        <a href="#none">
+                            <p>
+                                <img src="image/content2/c2_8_1.png" alt="MICKE 미케">
+                                <img class="c2_img_hover" src="image/content2/c2_8_2.png" alt="MICKE 미케">
+                            </p>
+                            <dl>
+                                <dt>MICKE 미케</dt>
+                                    <dd>책상, 화이트73x50 cm</dd>
+                            </dl>
+                            <div class="c2_price">
+                                <sup class="c2_P_1">￦</sup>
+                                <span class="c2_P_2">59,900</span>
+                            </div>
+                            <div class="c2_review">
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star_half</span>
+                                <span class="c2_R_">(53)</span>
+                            </div>
+                            <div class="c2_3">기타 옵션</div>
+                            <div class="c2_hover">
+                                <span class="material-icons">add_shopping_cart</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="c2_heart">
+                            <span class="material-icons">favorite_border</span>
+                        </div>
+                        <a href="#none">
+                            <p>
+                                <img src="image/content2/c2_9_1.png" alt="RÅSKOG 로스코그">
+                                <img class="c2_img_hover" src="image/content2/c2_9_2.png" alt="RÅSKOG 로스코그">
+                            </p>
+                            <dl>
+                                <dt>RÅSKOG 로스코그</dt>
+                                    <dd>카트, 화이트35x45x78 cm</dd>
+                            </dl>
+                            <div class="c2_price">
+                                <sup class="c2_P_1">￦</sup>
+                                <span class="c2_P_2">34,900</span>
+                            </div>
+                            <div class="c2_review">
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star_half</span>
+                                <span class="c2_R_">(176)</span>
+                            </div>
+                            <div class="c2_3">기타 옵션</div>
+                            <div class="c2_hover">
+                                <span class="material-icons">add_shopping_cart</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="c2_heart">
+                            <span class="material-icons">favorite_border</span>
+                        </div>
+                        <a href="#none">
+                            <p>
+                                <img src="image/content2/c2_10_1.png" alt="LERBERG 레르베리">
+                                <img class="c2_img_hover" src="image/content2/c2_10_2.png" alt="LERBERG 레르베리">
+                            </p>
+                            <dl>
+                                <dt>LERBERG 레르베리</dt>
+                                    <dd>선반유닛, 화이트60x148 cm</dd>
+                            </dl>
+                            <div class="c2_price">
+                                <sup class="c2_P_1">￦</sup>
+                                <span class="c2_P_2">17,900</span>
+                            </div>
+                            <div class="c2_review">
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star_half</span>
+                                <span class="c2_R_">(508)</span>
+                            </div>
+                            <div class="c2_3">기타 옵션</div>
+                            <div class="c2_hover">
+                                <span class="material-icons">add_shopping_cart</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="c2_heart">
+                            <span class="material-icons">favorite_border</span>
+                        </div>
+                        <a href="#none">
+                            <p>
+                                <img src="image/content2/c2_11_1.png" alt="ISBERGET 이스베리에트">
+                                <img class="c2_img_hover" src="image/content2/c2_11_2.png" alt="ISBERGET 이스베리에트">
+                            </p>
+                            <dl>
+                                <dt>ISBERGET 이스베리에트</dt>
+                                    <dd>태블릿 거치대, 화이트25x25 cm</dd>
+                            </dl>
+                            <div class="c2_price">
+                                <sup class="c2_P_1">￦</sup>
+                                <span class="c2_P_2_1">2,500</span>
+                            </div>
+                            <div class="c2_review">
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star_half</span>
+                                <span class="c2_R_">(55)</span>
+                            </div>
+                            <div class="c2_3">기타 옵션</div>
+                            <div class="c2_hover">
+                                <span class="material-icons">add_shopping_cart</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="c2_heart">
+                            <span class="material-icons">favorite_border</span>
+                        </div>
+                        <a href="#none">
+                            <p>
+                                <img src="image/content2/c2_12_1.png" alt="TJENA 셰나">
+                                <img class="c2_img_hover" src="image/content2/c2_12_2.png" alt="TJENA 셰나">
+                            </p>
+                            <dl>
+                                <dt>TJENA 셰나</dt>
+                                    <dd>파일꽂이, 화이트</dd>
+                            </dl>
+                            <div class="c2_price">
+                                <sup class="c2_P_1">￦</sup>
+                                <span class="c2_P_2">3,900</span>
+                                <sub class="c2_P_1">/ 2개</sub>
+                            </div>
+                            <div class="c2_review">
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star_half</span>
+                                <span class="c2_R_">(52)</span>
+                            </div>
+                            <div class="c2_3">기타 옵션</div>
+                            <div class="c2_hover">
+                                <span class="material-icons">add_shopping_cart</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="c2_cv_button"> <!-- 슬라이드 버튼 -->
+                <button class="c2_C_pre"><span class="material-icons">chevron_left</span></button>
+                <button class="c2_C_nex"><span class="material-icons">chevron_right</span></button>
+            </div>
+            <!-- <div class="c2_underBar"> 
+                <div class="c2_ub_bg">
+                    <button class="c2_ub_object"></button>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+<section id="content3"> <!-- 컨텐츠 3 : 신제품을 만나보세요 -->
+    <div class="c3_bg">
+        <div class="c3_title"> <!-- 컨텐츠 3 : 타이틀 -->
+            <div class="c3_h1"><span>신제품</span>을 만나보세요</div>
+            <div class="c3_T_line"></div>            
+        </div>
+        <div class="c3_T_text clear">
+            <div class="c3_T_h2">
+                <p class="c3_T_h2_line"></p>
+                <p>새로운 계절. 새로운 제품.</p>
+            </div>
+            
+            <div class="c3_T_h3">
+                <p class="c3_T_h3_line"></p>
+                <p>새로운 제품으로 공간을 가을 분위기로 꾸며보세요.</p>
+            </div>
+            
+            <div class="c3_T_button">
+                <button type="submit" name="신제품 보러가기" title="신제품 보러가기">신제품 보러가기</button>
+            </div>
+        </div>
+            
+        <div class="c3_cv_bg clear"><!-- 컨텐츠 3 : 비주얼 -->
+            
+            <div class="c3_cv clear"> <!-- 보이는 이미지  -->
+                <div class="c3_cv_1"> <!-- 1번 이미지 -->
+                    <div class="c3_1_img">
+                        <img src="image/content3/c3_img_1.png" alt="c3_img_1">
+                    </div>
+
+                    <!-- hover 원 -->
+                    <div class="c3_circle c3_1_circle_1">
+                        <div class="c3_circle_outter">
+                            <div class="c3_circle_inner"></div>
+                        </div>                        
+                    </div>
+                    <div class="c3_circle c3_1_circle_2">
+                        <div class="c3_circle_outter">
+                            <div class="c3_circle_inner"></div>
+                        </div>                        
+                    </div>
+                    <div class="c3_circle c3_1_circle_3">
+                        <div class="c3_circle_outter">
+                            <div class="c3_circle_inner"></div>
+                        </div>                        
+                    </div>
+                    <!-- ------------------------------------------ -->
+                    <div class="c3_1_ob c3_1_ob1"> <!-- 1 -->
+                        <div class="c3_cv_arrow"> 
+                            <span class="material-icons">add_circle</span>
+                        </div>
+                        <p class="c3_cv_text_new">NEW</p>
+                        <dl>
+                            <dt>BLÅKULLEN<br>블로쿨렌</dt>
+                            <dd>쿠션형 침대프레임+...</dd>
+                        </dl>
+                        <p class="c3_cv_price">
+                            <sup>￦</sup>
+                            <span>149,000</span>
+                        </p>
+                    </div>
+
+                    <div class="c3_1_ob c3_1_ob2"> <!-- 2 -->
+                        <div class="c3_cv_arrow"> 
+                            <span class="material-icons">add_circle</span>
+                        </div>
+                        <p class="c3_cv_text_new">NEW</p>
+                        <dl>
+                            <dt>DEJSA 데이사</dt>
+                            <dd>탁상스탠드</dd>
+                        </dl>
+                        <p class="c3_cv_price">
+                            <sup>￦</sup>
+                            <span>39,900</span>
+                        </p>
+                    </div>
+
+                    <div class="c3_1_ob c3_1_ob3"> <!-- 3 -->
+                        <div class="c3_cv_arrow"> 
+                            <span class="material-icons">add_circle</span>
+                        </div>
+                        <!-- <p class="c3_cv_text_new">NEW</p> -->
+                        <dl>
+                            <dt>VITTSJÖ 빗셰</dt>
+                            <dd>커피테이블</dd>
+                        </dl>
+                        <p class="c3_cv_price">
+                            <sup>￦</sup>
+                            <span>59,900</span>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="c3_cv_2"> <!-- 2번 이미지 -->
+                    <div class="c3_2_img">
+                        <img src="image/content3/c3_img_2.png" alt="c3_img_2">
+                    </div>
+
+                    <!-- hover 원 -->
+                    <div class="c3_circle c3_2_circle_1">
+                        <div class="c3_circle_outter">
+                            <div class="c3_circle_inner"></div>
+                        </div>
+                    </div>
+                    <div class="c3_circle c3_2_circle_2">
+                        <div class="c3_circle_outter">
+                            <div class="c3_circle_inner"></div>
+                        </div>
+                    </div>
+                    <div class="c3_circle c3_2_circle_3">
+                        <div class="c3_circle_outter">
+                            <div class="c3_circle_inner"></div>
+                        </div>
+                    </div>
+                    <div class="c3_circle c3_2_circle_4">
+                        <div class="c3_circle_outter">
+                            <div class="c3_circle_inner"></div>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------- -->
+                    <div class="c3_2_ob c3_2_ob1"> <!-- 1 -->
+                        <div class="c3_cv_arrow"> 
+                            <span class="material-icons">add_circle</span>
+                        </div>
+                        <p class="c3_cv_text_new">NEW</p>
+                        <dl>
+                            <dt>BLÅKULLEN<br>블로쿨렌</dt>
+                            <dd>쿠션형 침대프레임+...</dd>
+                        </dl>
+                        <p class="c3_cv_price">
+                            <sup>￦</sup>
+                            <span>149,000</span>
+                        </p>
+                    </div>
+
+                    <div class="c3_2_ob c3_2_ob2"> <!-- 2 -->
+                        <div class="c3_cv_arrow"> 
+                            <span class="material-icons">add_circle</span>
+                        </div>
+                        <!-- <p class="c3_cv_text_new">NEW</p> -->
+                        <dl>
+                            <dt>NATTJASMIN<br>나티아스민</dt>
+                            <dd>이불커버+베개커버</dd>
+                        </dl>
+                        <p class="c3_cv_price">
+                            <sup>￦</sup>
+                            <span>49,900</span>
+                        </p>
+                    </div>
+
+                    <div class="c3_2_ob c3_2_ob3"> <!-- 3 -->
+                        <div class="c3_cv_arrow"> 
+                            <span class="material-icons">add_circle</span>
+                        </div>
+                        <p class="c3_cv_text_new">NEW</p>
+                        <dl>
+                            <dt>DEJSA 데이사</dt>
+                            <dd>탁상스탠드</dd>
+                        </dl>
+                        <p class="c3_cv_price">
+                            <sup>￦</sup>
+                            <span>39,900</span>
+                        </p>
+                    </div>
+
+                    <div class="c3_2_ob c3_2_ob4"> <!-- 4 -->
+                        <div class="c3_cv_arrow"> 
+                            <span class="material-icons">add_circle</span>
+                        </div>
+                        <!-- <p class="c3_cv_text_new">NEW</p> -->
+                        <dl>
+                            <dt>IVRIG<br>이브리그</dt>
+                            <dd>유리컵</dd>
+                        </dl>
+                        <p class="c3_cv_price">
+                            <sup>￦</sup>
+                            <span>9,900</span>
+                            <sub>&nbsp;/ 4개</sub>
+                        </p>
+                    </div>
+
+                </div><!-- 2번 이미지 -->
+
+            </div><!-- 보이는 이미지  -->
+               
+        </div> <!-- 컨텐츠 3 : 비주얼  -->
+
+        <div class="c3_button"> <!-- 컨텐츠 3 : 비주얼 버튼 -->
+            <button class="c3_bt_left" type="button">
+            </button>
+            <button class="c3_bt_right" type="button">
+            </button>
+        </div>
+    </div>
+</section>
+
+<section id="content4"> <!-- 컨텐츠 4 :지속가능한 내일을 위한 솔루션 -->
+    <div class="c4_bg_object"> <!-- 컨텐츠 4 : 배경 오브젝트 -->
+        <div class="c4_o_box">
+            <div class="c4_o1 c4_oL"></div>
+            <div class="c4_o2 c4_oL"></div>
+            <div class="c4_o3 c4_oR"></div>
+            <div class="c4_o4 c4_oR"></div>
+        </div>
+    </div>
+    <div class="c4_bg">
+        <div class="c4_title"> <!-- 컨텐츠 4 : 타이틀 -->
+            <h1><span>지속가능한</span> 내일을 위한 솔루션</h1>
+            <div class="c4_T_line"></div>            
+        </div>
+        <div class="c4_T_text clear"> <!-- 컨텐츠 4 : 소제 -->
+            <!-- <h2>
+                <div class="c4_T_h2_line"></div>
+                <div>새로운 계절. 새로운 제품.</div>
+            </h2> -->            
+            <div class="c4_T_h3">
+                <div class="c4_T_h3_line"></div>
+                <div>집에서 지속가능한 생활을 실천할 수 있는 아이디어</div>
+            </div>
+            
+            <div class="c4_T_button">
+                <button type="button" name="c4_click">
+                    <span class="material-icons">recycling</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="c4_cv_bg"> <!-- 컨텐츠 4 : 비주얼 -->
+            
+            <div class="c4_cv"> <!-- 비주얼 영역 -->
+                <ul class="clear">
+                    <li>
+                        <a href="#none">
+                            <img src="image/content4/c4_img_1.png" alt="c4_img_1">
+                            <p class="c4_p1">응원해요! 당신의 작은 실천</p>
+                            <p class="c4_p2">
+                                <span class="material-icons">send</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <img src="image/content4/c4_img_2.png" alt="c4_img_2">
+                            <p class="c4_p1">물 아끼기</p>
+                            <p class="c4_p2">
+                                <span class="material-icons">send</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <img src="image/content4/c4_img_3.png" alt="c4_img_3">
+                            <p class="c4_p1">에너지 아끼기</p>
+                            <p class="c4_p2">
+                                <span class="material-icons">send</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <img src="image/content4/c4_img_4.png" alt="c4_img_4">
+                            <p class="c4_p1">건강한 집</p>
+                            <p class="c4_p2">
+                                <span class="material-icons">send</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <img src="image/content4/c4_img_5.png" alt="c4_img_5">
+                            <p class="c4_p1">쓰레기 줄이기</p>
+                            <p class="c4_p2">
+                                <span class="material-icons">send</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <img src="image/content4/c4_img_6.png" alt="c4_img_6">
+                            <p class="c4_p1">지속가능한 가구</p>
+                            <p class="c4_p2">
+                                <span class="material-icons">send</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <img src="image/content4/c4_img_7.png" alt="c4_img_7">
+                            <p class="c4_p1">지속가능한 소재</p>
+                            <p class="c4_p2">
+                                <span class="material-icons">send</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <img src="image/content4/c4_img_8.png" alt="c4_img_8">
+                            <p class="c4_p1">지속가능한 먹거리</p>
+                            <p class="c4_p2">
+                                <span class="material-icons">send</span>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div> <!-- 비주얼 영역 -->
+
+            <div class="c4_button"> <!-- 컨텐츠 4 : 이전, 다음 버튼 -->
+                <button class="c4_pre"><span class="material-icons">chevron_left</span></button>
+                <button class="c4_nex"><span class="material-icons">chevron_right</span></button>
+            </div>
+
+        </div>        
+
+    </div>    
+</section>
+
+<section id="content5"> <!-- 컨텐츠 5 : 서비스, 공지사항 -->
+    <!-- 스크롤시 반응하는 원 만들기 -->
+    <div class="c5_circle"></div>
+
+    <div class="c5_bg">
+        
+        <div class="c5_list"> <!-- 컨텐츠 5 : 서비스 -->
+            <ul class="clear">
+                <li>
+                    <svg focusable="false" viewBox="0 0 24 24" class="pub__svg-icon pub__call-out__icon" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 4h15v3h3.0246l3.9793 5.6848V18h-2.6567c-.4218 1.3056-1.6473 2.25-3.0933 2.25-1.446 0-2.6715-.9444-3.0932-2.25h-3.9044c-.4217 1.3056-1.6472 2.25-3.0932 2.25S4.4916 19.3056 4.0698 18H1V4zm3.0698 12c.4218-1.3056 1.6473-2.25 3.0933-2.25 1.446 0 2.6715.9444 3.0932 2.25H14V6H3v10h1.0698zM16 14.0007a3.24 3.24 0 0 1 1.2539-.2507c1.446 0 2.6715.9444 3.0933 2.25h.6567v-2.6848L17.9833 9H16v5.0007zM7.163 15.75c-.6903 0-1.25.5596-1.25 1.25s.5597 1.25 1.25 1.25c.6904 0 1.25-.5596 1.25-1.25s-.5596-1.25-1.25-1.25zm10.0909 0c-.6904 0-1.25.5596-1.25 1.25s.5596 1.25 1.25 1.25 1.25-.5596 1.25-1.25-.5596-1.25-1.25-1.25z"></path></svg>
+                    <h3>배송 서비스</h3>
+                    <p>편리한 배송 옵션을<br>살펴보세요</p>
+                    <a href="#none">더 보기</a>
+                </li>
+                <li>
+                    <svg focusable="false" viewBox="0 0 24 24" class="pub__svg-icon pub__call-out__icon" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.0009 2.586 4 11.5868v5.4144h5.4142l8.9944-8.9944-5.4077-5.421zM6 15.0012v-2.5859l6.9991-6.9993 2.5828 2.589-6.9961 6.9962H6z"></path><path d="M4 21.0009h16v-2H4v2z"></path></svg>
+                    <h3>주방 서비스</h3>
+                    <p>전문가와 함께 꿈의 주방을 현실로 만들어보세요</p>
+                    <a href="#none">더 보기</a>
+                </li>
+                <li>
+                    <svg focusable="false" viewBox="0 0 24 24" class="pub__svg-icon pub__call-out__icon" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.8439 9.9156a6.5766 6.5766 0 0 1-.3164-2.0217c0-3.6348 2.9466-6.5814 6.5814-6.5814 1.4557 0 2.8012.4727 3.891 1.2729l-3.8503 3.856 1.4155 1.4156 3.8495-3.8579c.8019 1.0906 1.2756 2.4373 1.2756 3.8948 0 3.6348-2.9465 6.5813-6.5813 6.5813a6.5769 6.5769 0 0 1-2.0227-.3166l-7.8436 7.8436L2 17.7595l7.8439-7.8438zM20.6902 7.894c0 2.5302-2.0511 4.5813-4.5813 4.5813-.904 0-1.7468-.2617-2.4567-.7136l-7.4096 7.4121-1.4142-1.4142 7.4103-7.4129a4.5595 4.5595 0 0 1-.7112-2.4527c0-2.5303 2.0511-4.5814 4.5814-4.5814.1108 0 .2206.0039.3293.0116l-1.7028 1.7031c-.7811.781-.7811 2.0474 0 2.8285l1.4155 1.4155c.7811.7811 2.0474.7811 2.8284 0l1.6998-1.6998c.0074.1065.0111.214.0111.3225z"></path></svg>
+                    <h3>설치 서비스</h3>
+                    <p>전문가의 주방 및 욕실 설치 서비스를 받을 수 있어요</p>
+                    <a href="#none">더 보기</a>
+                </li>
+                <li>
+                    <svg focusable="false" viewBox="0 0 24 24" class="pub__svg-icon pub__call-out__icon" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M14 6H5v3h9V6zM3 4v7h3.983l-2.3093 4H3v6h11v-6h-3.5445l2.3094-4H16V9h2V8h3V6h-3V5h-2V4H3zm7.4555 7-2.3094 4H6.983l2.3094-4h1.163zM5 17h7v2H5v-2z"></path></svg>
+                    <h3>조립 서비스</h3>
+                    <p>IKEA에게 조립을 맡기고 소중한 시간을 아끼세요</p>
+                    <a href="#none">더 보기</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="c5_notice"> <!-- 컨텐츠 5 : 공지사항 -->
+            <div class="c5_n clear">                
+                <p><img src="image/content5/c5_img_1.png" alt="c5_img_1"></p>
+                <h3>코로나 19 대응 공지</h3>
+                <button type="button">
+                    <span class="material-icons">arrow_forward</span>
+                </button>
+            </div>
+            <div class="c5_n clear">                
+                <p><img src="image/content5/c5_img_2.png" alt="c5_img_2"></p>
+                <h3>제품리콜</h3>
+                <button type="button">
+                    <span class="material-icons">arrow_forward</span>
+                </button>                
+            </div>
+            <div class="c5_n clear">                
+                <p><img src="image/content5/c5_img_3.png" alt="c5_img_3"></p>
+                <h3>안전사고 예방 방법</h3>
+                <button type="button">
+                    <span class="material-icons">arrow_forward</span>
+                </button>                
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</div> <!-- wrap -->
+
+<div class="footer_before_background"> <!-- 푸터 윗 배경 -->
+    <div class="footer_bb_1"></div>
+</div>
+<footer>
+    <div class="f_bg">
+
+        <div class="f_area_1 clear"> <!-- 푸터 영역 1 -->
+            <div class="f1_left"> <!-- 푸터 영역 1 : 왼쪽 -->
+                <h3>IKEA Family</h3>
+                <p>지금 IKEA Family에 무료로 가입하고 <br>다양한 멤버 전용 혜택을 누리세요. <a href="#none">자세히 보기</a></p>
+                <a href="#none" class="f1_btn">IKEA Family 가입하기</a>
+            </div>
+            <div class="f1_right"> <!-- 푸터 영역 1 : 오른쪽 -->
+                <ul class="f1_accordion clear">
+                    <li class="f1_accordion_item">
+                        <h4>
+                            <span>고객문의</span>
+                        </h4>
+                        <ul class="f1_accordion_content">
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">고객지원</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">자주 묻는 질문</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">문의하기</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">배송조회</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">교환환불</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">품질보증</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">제품리콜</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">제품 구매 가이드</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">브로슈어</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">피드백</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">부품 신청</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="f1_accordion_item">
+                        <h4>
+                            <span>쇼핑하기</span>
+                        </h4>
+                        <ul class="f1_accordion_content">
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">쇼핑하기</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">전화 주문</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">IKEA for Business</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">셀프 플래닝</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">IKEA 모바일 앱</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">제품 사용 팁/가이드</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">결제 옵션</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">기프트 카드</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="f1_accordion_item">
+                        <h4>
+                            <span>서비스</span>
+                        </h4>
+                        <ul class="f1_accordion_content">
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">IKEA 서비스</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">배송 서비스</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">조립 서비스</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">설치 서비스</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">주방 서비스</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">홈퍼니싱 플래닝 서비스</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">인테리어 디자인 서비스</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">바이백 서비스</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="f1_accordion_item">
+                        <h4>
+                            <span>IKEA 이야기</span>
+                        </h4>
+                        <ul class="f1_accordion_content">
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">브랜드 소개</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">집에서의 삶</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">지속가능한 생활</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">내가 아끼는 집, 나를 아끼는 집</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">뉴스</a>
+                            </li>
+                            <li class="f1_accordion_content_item">
+                                <a href="#none">채용정보</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="f_area_2 clear"> <!-- 푸터 영역 2  -->
+            <div class="f2_sns">    <!-- 푸터 영역 2 : SNS -->
+                <ul class="clear">
+                    <li class="f2_sns_content">
+                        <a href="#none" class="f2_s_facebook indent">facebook</a>
+                    </li>
+                    <li class="f2_sns_content">
+                        <a href="#none" class="f2_s_instagram indent">instagram</a>
+                    </li>
+                    <li class="f2_sns_content">
+                        <a href="#none" class="f2_s_youtube indent">youtube</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="f2_language"> <!-- 푸터 영역 2 : 국가변경, 언어선택 -->
+                <div class="f2_l_1">
+                    <a href="#none">
+                        <span class="material-icons">language</span>
+                        <span>국가변경</span>
+                    </a>
+                </div>
+                <div class="f2_l_2">
+                    <select name="countrySelector" aria-label="원하시는 언어를 선택하세요.">
+                        <option value="한국어">한국어</option>
+                        <option value="English">English</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="f_area_3 clear"> <!-- 푸터 영역 3  -->
+            <div class="f3_copyright"> <!-- 푸터 영역 3 : copylight -->
+                <p>&copy; Inter IKEA Systems B.V 1999-2021</p>
+            </div>
+            <div class="f3_legalLinks">
+                <ul class="f3_list clear">
+                    <li class="f3_list_item"> <!-- 푸터 영역 3 : list -->
+                        <a href="#none" class="f3-link">개인정보처리방침</a>
+                    </li>
+                    <li class="f3_list_item">
+                        <a href="#none" class="f3-link">쿠키 정책</a>
+                    </li>
+                    <li class="f3_list_item">
+                        <a href="#none" class="f3-link">쿠키 설정</a>
+                    </li>
+                    <li class="f3_list_item">
+                        <a href="#none" class="f3-link">웹사이트 이용약관</a>
+                    </li>
+                    <li class="f3_list_item">
+                        <a href="#none" class="f3-link">Responsible disclosure</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="f_area_4"> <!-- 푸터 영역 4 -->
+            <div class="f4_legalInformation">
+                <span>
+                    IKEA 코리아 <br>
+                    주소 : (우) 14352  경기도 광명시 일직로 17 IKEA광명점<br>
+                    사업자 등록번호 : 106-86-82871 <a href="#none"> 사업자정보확인 </a><br>
+                    대표자 : 프레드릭 요한손 <br>
+                    통신판매업 신고 : 2018-경기광명-0209 <br>
+                    TEL : 1670-4532
+                </span>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+<!-- Script Source -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+
+<script src="js/ikea.js"></script>
+
+<!-- <script type="text/javascript" src="/js//bootstrap.min.js"></script> -->
+</body>
+</html>
